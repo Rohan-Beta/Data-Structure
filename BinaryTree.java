@@ -6,6 +6,7 @@
 // lebelorder Traversal(print nodes in lebel)
 // count nodes
 // sum of nodes
+// tree diameter (tree size - root value)
 
 import java.util.*;
 
@@ -125,6 +126,16 @@ class BinaryTree {
     public int getCount() {
         return count;
     }
+    public int sumofNodes(Node root) {
+
+        if(root == null) {
+            return 0;
+        }
+        int leftSum = sumofNodes(root.left);
+        int rightSum = sumofNodes(root.right);
+
+        return leftSum + rightSum + root.data;
+    }
 }
 class Firstclass {
     public static void main(String args[]) {
@@ -134,7 +145,7 @@ class Firstclass {
         int nodes[] = {1 , 2 , 4 , -1 , -1 , 5 , -1 , -1 , 3 , -1 , 6 , -1 , -1};
         
         tree.root = tree.buildTree(nodes);
-        System.out.println(tree.root.data);
+        System.out.println(tree.root.data); //root value
 
         tree.preorder(tree.root);
         System.out.print("\n");
@@ -149,5 +160,11 @@ class Firstclass {
         System.out.print("\n");
 
         System.out.print(tree.getCount());
+        System.out.print("\n");
+
+        System.out.print(tree.getCount() - 1); //diameter
+        System.out.print("\n");
+
+        System.out.print(tree.sumofNodes(tree.root));
     }
 }
