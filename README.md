@@ -1,2 +1,2 @@
-# Data-Structure-And-Algorithim
+# Data-Structure
 # Using Java 
