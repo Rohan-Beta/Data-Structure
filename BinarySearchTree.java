@@ -13,6 +13,7 @@ import java.util.*;
 class BinarySearchTree {
 
     Node root;
+    int size;
 
     class Node {
         int data;
@@ -23,6 +24,7 @@ class BinarySearchTree {
             this.data = data;
             this.left = null;
             this.right = null;
+            size++;
         }
     } 
     // whenever root value is smaller than key value we search node in left subtree of the tree
@@ -85,6 +87,7 @@ class BinarySearchTree {
         }
         else if(root.data < key) {
             root.right = deleteKey(root.right, key);
+            size--;
         }
         else { // root.data == key
 
@@ -123,6 +126,9 @@ class BinarySearchTree {
             root = root.left;
         }
         return root;
+    }
+    public int getSize() {
+        return size;
     }
     
     // print range
