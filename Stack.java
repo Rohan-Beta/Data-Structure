@@ -18,6 +18,7 @@ class Stack {
         Node(int data) {
             this.data = data;
             this.next = null;
+            size++;
         }
     }
     // push
@@ -38,6 +39,7 @@ class Stack {
         if(head == null) {
             return;
         }
+        size--;
         int top = head.data;
         head = head.next;
 
@@ -87,6 +89,9 @@ class Stack {
         }
         head.next = null;
         head = prevNode;
+    }
+    public int getSize() {
+        return size;
     }
 }
 class Firstclass {
