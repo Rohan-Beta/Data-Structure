@@ -1,4 +1,5 @@
 // HashMap (dictionary in python)
+// time complexity for all is O(1)
 
 // put/insert
 // search/contains
