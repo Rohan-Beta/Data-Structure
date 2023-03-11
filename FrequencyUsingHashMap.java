@@ -1,3 +1,5 @@
+// max frequency of a number will print
+
 import java.util.*;
 
 class Firstclass {
