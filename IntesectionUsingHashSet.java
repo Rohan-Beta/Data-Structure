@@ -4,7 +4,7 @@ import java.util.*;
 
 class Firstclass {
 
-    public static int union(int arr1[] , int arr2[]) {
+    public static int intersection(int arr1[] , int arr2[]) {
         
         HashSet<Integer> set = new HashSet<>();
 
@@ -24,6 +24,6 @@ class Firstclass {
         int arr1[] = {7 , 3 , 9};
         int arr2[] = {6 , 3 , 9 , 2 , 9 , 4};
 
-        System.out.println(union(arr1, arr2));
+        System.out.println(intersection(arr1, arr2));
     }
 }
