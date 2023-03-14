@@ -24,6 +24,8 @@ class Firstclass {
             if(map.containsKey(sum-k)) {
                 ans += map.get(sum-k);
             }
+            // frequency
+
             if(map.containsKey(sum)) {
                 map.put(sum , map.get(sum) + 1);
             }
