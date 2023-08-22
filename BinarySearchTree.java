@@ -99,7 +99,7 @@ class BinarySearchTree {
             }
 
             // case 2:
-            // two child
+            // one child
 
             if(root.left == null) {
                 return root.right;
