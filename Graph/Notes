@@ -1,0 +1,17 @@
+* 4 ways to create graph
+
+i. Adjacency List : We use this because of its time complexity and it is better than Adjacency Matrix
+
+ii. Adjacency Matrix : We generally not use this because it occupy more space as compared Adjacency List and for its time complexity
+
+iii. Edge List : We use this for MST(Minimum Spanning Tree) , which sort the graph
+
+iv. Implicit Graph : We use this for flood fill algorithm , it also give shortest path in matrix by moving left , right , up , down
+
+We mostly use Adjacency List graph
+
+* 2 ways to traverse in graph
+
+i. BFS (Breadth First Search)
+
+ii. DFS (Depth First Search)
