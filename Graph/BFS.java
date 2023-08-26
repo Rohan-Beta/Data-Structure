@@ -1,5 +1,5 @@
 // BFS (Breadth First Search)
-// for disconnected graph
+// for connected and disconnected graph
 
 // time complexity is O(V + E) , V = vertices and E = edges 
 
