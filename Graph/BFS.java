@@ -57,7 +57,7 @@ class Firstclass {
     public static void bfs(ArrayList<Edge> graph[] , int v , boolean visited[] , int start) {
 
         Queue<Integer> q = new LinkedList<>();
-        q.add(0); // starting value
+        q.add(start); // starting value
 
         while(!q.isEmpty()) {
             int curr = q.remove();
