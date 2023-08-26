@@ -3,7 +3,7 @@
 
 // time complexity is O(V + E) , V = vertices and E = edges 
 
-// it use queue data stracture so it follows FIFO format
+// it use queue data structure so it follows FIFO format
 
 import java.util.*;
 
