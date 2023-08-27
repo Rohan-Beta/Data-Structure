@@ -66,6 +66,8 @@ class Firstclass {
                 System.out.print(curr + " ");
                 visited[curr] = true;
 
+                // get neighbour
+                
                 for(int i = 0; i < graph[curr].size(); i += 1) {
                     Edge e = graph[curr].get(i); // get index in array list
                 
