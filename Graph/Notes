@@ -15,3 +15,10 @@ We mostly use Adjacency List graph
 i. BFS (Breadth First Search)
 
 ii. DFS (Depth First Search)
+
+
+* Dijkstras Algorithm and Bellman Ford Algorithm
+
+Dijkstras Algorithm works only in positive graph but Bellman Ford Algorithm works on both (negative and positive) graph.
+We use Dijkstras instead of Bellman because of its time complexity.
+Dijkstras time complexity is lower than Bellman time complexity.
