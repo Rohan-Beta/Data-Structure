@@ -21,4 +21,6 @@ ii. DFS (Depth First Search)
 
 Dijkstras Algorithm works only in positive graph but Bellman Ford Algorithm works on both (negative and positive) graph.
 We use Dijkstras instead of Bellman because of its time complexity.
+
 Dijkstras time complexity is lower than Bellman time complexity.
+Bellman does not work on negative weight cycle (sum of weight of all vertices < 0). In this type of cases we could find the shortest distance.
