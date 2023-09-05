@@ -24,3 +24,14 @@ We use Dijkstras instead of Bellman because of its time complexity.
 
 Dijkstras time complexity is lower than Bellman time complexity.
 Bellman does not work on negative weight cycle (sum of weight of all vertices < 0). In this type of cases we could find the shortest distance.
+
+
+* Minimum Spanning Tree (MST) property
+
+Subgraph of the main graph
+All vertices must be there
+vertices must be connected
+no cycle will be there
+edge weight will be minimum
+
+MST work only on egde-weighted undirected graph
