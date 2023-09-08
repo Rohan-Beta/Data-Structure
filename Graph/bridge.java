@@ -67,7 +67,7 @@ class Firstclass {
             else if(vis[e.dest] == false) {
                 dfs(graph, e.dest, vis, dt, ldt, time, curr);
 
-                ldt[curr] = Math.min(ldt[curr] , ldt[e.dest]); // compairing lowest distance time of current node with its neighbour node
+                ldt[curr] = Math.min(ldt[curr] , ldt[e.dest]); // compairing lowest discovery time of current node with its neighbour node
 
                 // checking bridge condition
 
