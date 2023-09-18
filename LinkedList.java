@@ -10,6 +10,7 @@
 // search element in list
 // print the list
 // get the list size
+// cycle detection
 
 import java.util.*;
 
@@ -225,6 +226,31 @@ class LinkList {
     public int getSize() {
         return size;
     }
+    // cycle detection
+
+    public void cycleDetection() {
+
+        Node prevNode = head;
+        Node currNode = head;
+        boolean flag = false;
+
+        while(prevNode != null && currNode != null && currNode.next != null) {
+
+            prevNode = prevNode.next;
+            currNode = currNode.next.next;
+
+            if(prevNode == currNode) {
+                flag = true;
+                break;
+            }
+        }
+        if(flag) {
+            System.out.print("cycle detected");
+        }
+        else {
+            System.out.print("no cycle detected");
+        }
+    }
 }
 class Firstclass {
     public static void main(String args[]) {
@@ -258,6 +284,10 @@ class Firstclass {
         list.deleteMiddle(2);
         list.printList();
 
-        System.out.println(list.getSize());
+        System.out.print(list.getSize());
+        System.out.println();
+
+        list.head.next.next = list.head;
+        list.cycleDetection();
     }
 }
