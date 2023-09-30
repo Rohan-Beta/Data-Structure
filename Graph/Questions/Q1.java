@@ -93,7 +93,7 @@ class Firstclass {
     public static void main(String args[]) {
 
         int task = 2;
-        int prerequisites[][] = {{1 , 0}};
+        int prerequisites[][] = {{1 , 0} , {0 , 1}};
 
         System.out.print(solution(task, prerequisites));
     }
